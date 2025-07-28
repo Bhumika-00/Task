@@ -1,5 +1,5 @@
 "use client";
-import { Tilt } from "react-tilt";
+import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 const features = [
