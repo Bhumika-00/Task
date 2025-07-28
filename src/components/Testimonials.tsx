@@ -27,7 +27,8 @@ export default function Testimonials() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: i * 0.2 }}
         >
-          <p>"{t.text}"</p>
+          {/* Removed problematic outer quotes */}
+          <p>&quot;{t.text}&quot;</p> 
           <h4 style={{ marginTop: "1rem", color: "var(--accent2)" }}>
             - {t.name}
           </h4>

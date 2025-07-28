@@ -25,7 +25,7 @@ export default function Features() {
   return (
     <section id="features" className="features">
       {features.map((f, i) => (
-        <Tilt key={i} options={{ max: 15, scale: 1.05 }}>
+        <Tilt key={i} tiltMaxAngleX={15} tiltMaxAngleY={15} scale={1.05}>
           <motion.div
             className="feature-card"
             initial={{ opacity: 0, y: 40 }}
